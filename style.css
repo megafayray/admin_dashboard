@@ -96,9 +96,6 @@ body {
 .sidebar {
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: auto 1fr; 
-    /* auto is only as much space as needed for the title,
-     1fr is the remainder allocated to the content */
     background-color: var(--major-color);
     color: var(--secondary-font-color);
     padding: 15px;
@@ -144,6 +141,16 @@ body {
     fill: white;
 }
 
+.card svg {
+    height: 20px;
+    justify-self: end;
+}
+
+.card_interactions {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -161,8 +168,18 @@ body {
     grid-template-columns: 3fr 1fr;
 }
 
-.announcements_and_trending {
+.project_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-right: 15px;;
+}
+
+.card {
+    background-color: white;
     padding: 15px;
+    border-radius: 8px;
+    display: grid;
 }
 
 .announcements > p {
