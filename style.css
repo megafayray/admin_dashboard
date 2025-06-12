@@ -3,6 +3,7 @@
     --secondary-font-color: white;
     --major-color: #1c94d3;
     --contrast-color: #e2e8f0;
+    --fancy-split-card-background: 90deg, #fdcd3b 3%, white 3%;
 }
 
 @font-face {
@@ -176,7 +177,7 @@ body {
 }
 
 .card {
-    background-color: white;
+    background: linear-gradient(var(--fancy-split-card-background));
     padding: 15px;
     border-radius: 8px;
     display: grid;
@@ -206,5 +207,5 @@ button {
     color: white;
     padding: 10px 20px;
     font-weight: bold;
-    margin: 0px 10px;
+    margin-left: 10px
 }
