@@ -3,7 +3,7 @@
     --secondary-font-color: white;
     --major-color: #1c94d3;
     --contrast-color: #e2e8f0;
-    --fancy-split-card-background: 90deg, #fdcd3b 3%, white 3%;
+    --fancy-split-card-background: 90deg, #fdcd3b 2%, white 2%;
 }
 
 @font-face {
@@ -96,50 +96,42 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    display: grid;
     background-color: var(--major-color);
     color: var(--secondary-font-color);
     padding: 15px;
     font-weight: bold;
 }
 
-.sidebar-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    padding-bottom: 15px;
+.heady {
+    font-size: 22px;
+}
+
+#heady {
+    width: 34px;
+    height: 34px;
+}
+
+.sidebar-links {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
-}
-
-.title_text {
-    align-self: center;
-}
-
-.sidebar-title svg {
-    fill: white;
-    height: 60px;
-    width: 60px;
-}
-
-.sidebar-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /*Icons and menu*/
-    grid-template-rows: 1fr 1fr 2fr;
-}
-
-.icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.icons svg {
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
     padding: 1em;
-    width: 24px;
+    justify-self: start
+}
+
+.sidebar-links span {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-links svg {
     height: 24px;
+    width: 24px;
     fill: white;
+}
+
+.space-above {
+    margin-top: 30px;
 }
 
 .card svg {
@@ -185,6 +177,10 @@ body {
 
 .announcements > p {
     font-size: 14px;
+}
+
+.border {
+    border-bottom: 1px solid var(--contrast-color);
 }
 
 .announcements_and_trending > div {
